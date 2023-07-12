@@ -23,11 +23,11 @@ Before running the application, ensure you have the following installed:
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/jwt-auth-server.git
+   https://github.com/bilalashraf1710/setup-nestjs-jwt.git
 
 2. Navigate to the project directory:
 
-    cd jwt-auth-server
+    cd setup-nestjs-jwt
 
 3. install the dependencies
 
@@ -37,7 +37,7 @@ Before running the application, ensure you have the following installed:
 Create a .env file in the root directory of the project and configure the following variables:
 
 PORT=3000
-JWT_SECRET=jwtauthserver
+JWT_SECRET=
 
 5. start the application
 
@@ -51,7 +51,9 @@ npm run start
     Create a new user by sending a POST request to the above endpoint with the following payload:
     {
         "email": "user@example.com",
-        "pas
+        "password": "password123"
+    }
+    
 ## User Sign In
     
     Endpoint: POST /auth/signin
